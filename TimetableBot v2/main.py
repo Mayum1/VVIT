@@ -3,7 +3,7 @@ from telebot import types
 import psycopg2
 from datetime import datetime, date
 
-token = "2127573688:AAGrKIajngsQ1Qj7H42CjIqHir42DCJJN_U"
+token = "bot_token"
 bot = telebot.TeleBot(token)
 
 conn = psycopg2.connect(database="bot_timetable",
