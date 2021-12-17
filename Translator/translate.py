@@ -1,6 +1,6 @@
 import os, requests, uuid, json
 
-subscription_key = 'eaf0dbbb9ed64460ae8bbe7422d73aab'
+subscription_key = 'azure_sub_key'
 location = 'westeurope'
 def get_translation(text_input, language_output):
     base_url = 'https://api.cognitive.microsofttranslator.com'
