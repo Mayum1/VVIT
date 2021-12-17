@@ -3,7 +3,7 @@ from xml.etree import ElementTree
 
 class TextToSpeech(object):
     def __init__(self, input_text, voice_font):
-        subscription_key = '37dd1b295a454784a5f0655f09263492'
+        subscription_key = 'azure_sub_key'
         self.subscription_key = subscription_key
         self.input_text = input_text
         self.voice_font = voice_font
