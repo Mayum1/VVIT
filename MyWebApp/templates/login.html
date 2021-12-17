@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </p>
+        {% if error == 1 or error == 3 %}
+            <p style="color: red; margin: -15px 0 -5px 65px;">Please, enter your login.</p>
+        {% endif %}
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </p>
+        {% if error == 2 or error == 3 %}
+            <p style="color: red; margin: -15px 0 -5px 65px;">Please, enter your password.</p>
+        {% endif %}
+        <p>
+            <input type="submit" value="Login" name="login">
+            <input type="submit" value="Registration" name="registration">
+        </p>
+        {% if error == 4 %}
+            <p style="color: red;">Wrong login or password.</p>
+        {% endif %}
+    </form>
+</body>
+</html>
