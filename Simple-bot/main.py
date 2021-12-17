@@ -3,7 +3,7 @@ import random
 from telebot import types
 from datetime import datetime
 
-token = "2061522467:AAE0_e4MTIl5p_EAmV38syevPgmbTEzgdzg"
+token = "telegram_bot_token"
 bot = telebot.TeleBot(token)
 day = datetime.now().strftime('%Y-%m-%d')
 luckNum = random.randint(1, 100)
